@@ -14,6 +14,20 @@ router.get("/", async (req, res) => {
   }
 });
 
+// Get a single resource by ID
+router.get("/:id", async (req, res) => {
+  try {
+    const resource = await Resource.findByPk(req.params.id);
+    if (!resource) {
+      return res.status(404).json({ error: "Resource not found" });
+    }
+    res.json(resource);
+  } catch (error) {
+    console.error("Error fetching resource:", error);
+    res.status(500).json({ error: "Internal server error" });
+  }
+});
+
 // Create a resource
 router.post("/", async (req, res) => {
   try {
