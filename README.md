@@ -13,6 +13,11 @@ This is the backend service for the **Resource Manager** application, built usin
 
 ---
 
+## 📡 Workflow
+![resource-manger-architecture](https://github.com/user-attachments/assets/04ca6050-929f-4207-af18-d16a1a4f78c5)
+
+---
+
 ## 📥 Installation & Setup
 ### 1️⃣ Clone the Repository
 ```sh
@@ -128,7 +133,7 @@ npm start
 
 ### **2️⃣ Test Deployed API**
 ```sh
-GET https://resource-manager-backend.onrender.com/resources
+GET https://resouce-manager-backend.onrender.com/resources
 ```
 
 ---
